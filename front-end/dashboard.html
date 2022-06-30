@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style2.css">
+        
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/3.6.95/css/materialdesignicons.css">
+        <script src="script.js"></script>
+        <script src="cache.js"></script>
+    </head>
+    
+    <body onload="weather.fetchWeather(), weather1.fetchWeather1(), weather2.fetchWeather2(), weather3.fetchWeather3(), weather4.fetchWeather4(), weather5.fetchWeather5(),weather6.fetchWeather6() ,weather7.fetchWeather7()">
+        
+        <h4 style="color: white">Weather App</h4>
+        
+    <br><br>
+        
+    <div class="container">
+    
+    <div class="row">
+      
+            
+    <div class="col-lg-6">
+        <div class="card" style="width: 26rem;"> 
+            <img class="image" src="bluu.jpg" alt="Card image cap">
+            <div class="card-img-overlay" style="height:110px;">
+                <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="card-title text-white m-b-0 dl">
+                        <h3 class="city"></h3>
+                         <img align="top" src="" alt="" class="ic">
+                        </div>
+                       
+                        <small class="card-text text-white font-light">
+                            <p class="desc"></p>
+                        
+                        </small>
+                    </div>
+                    
+                    <div class="col-4 b-r text-center">
+                         <div class="card-title text-white m-b-0 dl">
+                            <h3 class="temp"></h3><br>
+                        </div>
+                        
+                        
+                        <div class="m-l-20">
+                               
+                                
+                            </div>
+                    
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="card-body weather-small">
+                <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="d-flex">
+                          
+                            <div class="m-l-20">
+                                <div class="font">
+                               <p class="id"></p>
+                               <p class="dt"></p>
+                               </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 b-r text-center">
+                        <div class="m-l-20">
+                                <div class="font">
+                               <p class="pressure"></p>
+                               <p class="humidity"></p>
+                               </div> 
+                            </div>
+                    
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="column">
+         <div class="col-lg-6">
+        <div class="card" style="width: 26rem;"> 
+            <img class="" src="pu.jpg" alt="Card image cap">
+            <div class="card-img-overlay" style="height:110px;">
+                <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="card-title text-white m-b-0 dl">
+                        <h3 class="city1"></h3>
+                         <img align="top" src="" alt="" class="ic1">
+                        
+                        </div>
+                        <small class="card-text text-white font-light">
+                            <p class="desc1"></p>
+                        
+                        </small>
+                    </div>
+                    
+                    <div class="col-4 b-r text-center">
+                         <div class="card-title text-white m-b-0 dl">
+                            <h3 class="temp1"></h3><br>
+                        </div>
+                        
+                        
+                        <div class="m-l-20">
+                               
+                                
+                            </div>
+                    
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+             <div class="card-body weather-small">
+                <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="d-flex">
+                          
+                            <div class="m-l-20">
+                                <div class="font">
+                               <p class="id1"></p>
+                               <p class="dt1"></p>
+                               </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 b-r text-center">
+                        <div class="m-l-20">
+                                <div class="font">
+                               <p class="pressure1"></p>
+                               <p class="humidity1"></p>
+                               </div> 
+                            </div>
+                    
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    
+    <br><br>
+        
+    <div class="row">
+        <div class="col-lg-6">
+        <div class="card" style="width: 26rem;"> 
+            <img class="" src="green.jpg" alt="Card image cap">
+            <div class="card-img-overlay" style="height:110px;">
+                  <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="card-title text-white m-b-0 dl">
+                        <h3 class="city2"></h3>
+                         <img align="top" src="" alt="" class="ic2">
+                        
+                        </div>
+                        <small class="card-text text-white font-light">
+                            <p class="desc2"></p>
+                        
+                        </small>
+                    </div>
+                    
+                    <div class="col-4 b-r text-center">
+                         <div class="card-title text-white m-b-0 dl">
+                            <h3 class="temp2"></h3><br>
+                        </div>
+                        
+                        
+                        <div class="m-l-20">
+                               
+                                
+                            </div>
+                    
+                        
+                    </div>
+                    
+                    
+                </div>
+              
+            </div>
+            <div class="card-body weather-small">
+                <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="d-flex">
+                          
+                            <div class="m-l-20">
+                                <div class="font">
+                               <p class="id2"></p>
+                               <p class="dt2"></p>
+                               </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 b-r text-center">
+                        <div class="m-l-20">
+                                <div class="font">
+                               <p class="pressure2"></p>
+                               <p class="humidity2"></p>
+                               </div> 
+                            </div>
+                    
+                        
+                    </div>
+                   
+                </div>
+        </div>
+    </div>
+        
+        
+        
+        
+        
+        
+    </div>
+        
+        
+    <div class="col-lg-6">
+        <div class="card" style="width: 26rem;"> 
+            <img class="" src="orange.jpg" alt="Card image cap">
+            <div class="card-img-overlay" style="height:110px;">
+                  <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="card-title text-white m-b-0 dl">
+                        <h3 class="city3"></h3>
+                         <img align="top" src="" alt="" class="ic3">
+                        
+                        </div>
+                        <small class="card-text text-white font-light">
+                            <p class="desc3"></p>
+                        
+                        </small>
+                    </div>
+                    
+                    <div class="col-4 b-r text-center">
+                         <div class="card-title text-white m-b-0 dl">
+                            <h3 class="temp3"></h3><br>
+                        </div>
+                        
+                        
+                        <div class="m-l-20">
+                               
+                                
+                            </div>
+                    
+                        
+                    </div>
+                    
+                    
+                </div>
+              
+            </div>
+            <div class="card-body weather-small">
+                <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="d-flex">
+                          
+                            <div class="m-l-20">
+                                <div class="font">
+                               <p class="id3"></p>
+                               <p class="dt3"></p>
+                               </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 b-r text-center">
+                        <div class="m-l-20">
+                                <div class="font">
+                               <p class="pressure3"></p>
+                               <p class="humidity3"></p>
+                               </div> 
+                            </div>
+                    
+                        
+                    </div>
+                   
+                </div>
+        </div>
+    </div>
+        
+        
+        
+        
+        
+        
+    </div>
+        
+    
+    
+        
+    
+    
+        
+</div>
+        
+<br><br>
+        
+ <div class="row">
+      
+            
+    <div class="col-lg-6">
+        <div class="card" style="width: 26rem;"> 
+            <img class="image" src="red2.jpg" alt="Card image cap">
+            <div class="card-img-overlay" style="height:110px;">
+                <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="card-title text-white m-b-0 dl">
+                        <h3 class="city4"></h3>
+                         <img align="top" src="" alt="" class="ic4">
+                        </div>
+                       
+                        <small class="card-text text-white font-light">
+                            <p class="desc4"></p>
+                        
+                        </small>
+                    </div>
+                    
+                    <div class="col-4 b-r text-center">
+                         <div class="card-title text-white m-b-0 dl">
+                            <h3 class="temp4"></h3><br>
+                        </div>
+                        
+                        
+                        <div class="m-l-20">
+                               
+                                
+                            </div>
+                    
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="card-body weather-small">
+                <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="d-flex">
+                          
+                            <div class="m-l-20">
+                                <div class="font">
+                               <p class="id4"></p>
+                               <p class="dt4"></p>
+                               </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 b-r text-center">
+                        <div class="m-l-20">
+                                <div class="font">
+                               <p class="pressure4"></p>
+                               <p class="humidity4"></p>
+                               </div> 
+                            </div>
+                    
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="column">
+         <div class="col-lg-6">
+        <div class="card" style="width: 26rem;"> 
+            <img class="" src="yellow.jpg" alt="Card image cap">
+            <div class="card-img-overlay" style="height:110px;">
+                <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="card-title text-white m-b-0 dl">
+                        <h3 class="city5"></h3>
+                         <img align="top" src="" alt="" class="ic5">
+                        
+                        </div>
+                        <small class="card-text text-white font-light">
+                            <p class="desc5"></p>
+                        
+                        </small>
+                    </div>
+                    
+                    <div class="col-4 b-r text-center">
+                         <div class="card-title text-white m-b-0 dl">
+                            <h3 class="temp5"></h3><br>
+                        </div>
+                        
+                        
+                        <div class="m-l-20">
+                               
+                                
+                            </div>
+                    
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+             <div class="card-body weather-small">
+                <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="d-flex">
+                          
+                            <div class="m-l-20">
+                                <div class="font">
+                               <p class="id5"></p>
+                               <p class="dt5"></p>
+                               </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 b-r text-center">
+                        <div class="m-l-20">
+                                <div class="font">
+                               <p class="pressure5"></p>
+                               <p class="humidity5"></p>
+                               </div> 
+                            </div>
+                    
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+        
+        
+    <br><br>
+        
+    <div class="row">
+      
+            
+    <div class="col-lg-6">
+        <div class="card" style="width: 26rem;"> 
+            <img class="image" src="pink.jpg" alt="Card image cap">
+            <div class="card-img-overlay" style="height:110px;">
+                <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="card-title text-white m-b-0 dl">
+                        <h3 class="city6"></h3>
+                         <img align="top" src="" alt="" class="ic6">
+                        </div>
+                       
+                        <small class="card-text text-white font-light">
+                            <p class="desc6"></p>
+                        
+                        </small>
+                    </div>
+                    
+                    <div class="col-4 b-r text-center">
+                         <div class="card-title text-white m-b-0 dl">
+                            <h3 class="temp6"></h3><br>
+                        </div>
+                        
+                        
+                        <div class="m-l-20">
+                               
+                                
+                            </div>
+                    
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="card-body weather-small">
+                <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="d-flex">
+                          
+                            <div class="m-l-20">
+                                <div class="font">
+                               <p class="id6"></p>
+                               <p class="dt6"></p>
+                               </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 b-r text-center">
+                        <div class="m-l-20">
+                                <div class="font">
+                               <p class="pressure6"></p>
+                               <p class="humidity6"></p>
+                               </div> 
+                            </div>
+                    
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="column">
+         <div class="col-lg-6">
+        <div class="card" style="width: 26rem;"> 
+            <img class="" src="grey.jpg" alt="Card image cap">
+            <div class="card-img-overlay" style="height:110px;">
+                <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="card-title text-white m-b-0 dl">
+                        <h3 class="city7"></h3>
+                         <img align="top" src="" alt="" class="ic7">
+                        
+                        </div>
+                        <small class="card-text text-white font-light">
+                            <p class="desc7"></p>
+                        
+                        </small>
+                    </div>
+                    
+                    <div class="col-4 b-r text-center">
+                         <div class="card-title text-white m-b-0 dl">
+                            <h3 class="temp7"></h3><br>
+                        </div>
+                        
+                        
+                        <div class="m-l-20">
+                               
+                                
+                            </div>
+                    
+                        
+                    </div>
+                    
+                    
+                </div>
+                
+            </div>
+             <div class="card-body weather-small">
+                <div class="row">
+                    <div class="col-6 b-r align-self-center">
+                        <div class="d-flex">
+                          
+                            <div class="m-l-20">
+                                <div class="font">
+                               <p class="id7"></p>
+                               <p class="dt7"></p>
+                               </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 b-r text-center">
+                        <div class="m-l-20">
+                                <div class="font">
+                               <p class="pressure7"></p>
+                               <p class="humidity7"></p>
+                               </div> 
+                            </div>
+                    
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+        
+        
+    
+        
+
+        
+        
+        
+   <!-- <script>
+        
+        const city=[{"CityCode":"1248991","CityName":"Colombo","Temp":"33.0","Status":"Clouds"},{"CityCode":"1850147","CityName":"Tokyo","Temp":"8.6","Status":"Clear"},{"CityCode":"2644210","CityName":"Liverpool","Temp":"16.5","Status":"Rain"},{"CityCode":"2988507","CityName":"Paris","Temp":"22.4","Status":"Clear"},{"CityCode":"2147714","CityName":"Sydney","Temp":"27.3","Status":"Rain"},{"CityCode":"4930956","CityName":"Boston","Temp":"4.2","Status":"Mist"},{"CityCode":"1796236","CityName":"Shanghai","Temp":"10.1","Status":"Clouds"},{"CityCode":"3143244","CityName":"Oslo","Temp":"-3.9","Status":"Clear"}];
+
+        const arr = city.map(i => `${i.CityCode}`);
+        
+      
+        
+        let weather ={
+            "apiKey" : "6686b080f70ac73c314d392bc891236a",
+            fetchWeather :function(){
+                for(var i=0; i<arr.length;i++){
+                fetch("https://api.openweathermap.org/data/2.5/weather?id="+arr[0]+"&appid=6686b080f70ac73c314d392bc891236a")
+                .then((response)=> response.json())
+                .then((data)=>this.displayWeather(data));
+                    
+                }
+                
+            },
+            
+            
+            displayWeather : function(data){
+                const {name} =data;
+                const {icon, description} =data.weather[0];
+                const {temp,temp_min,temp_max,pressure,humidity} =data.main;
+                const {speed} =data.wind;
+                const {sunrise,sunset} =data.sys;
+                console.log(name,icon,description,temp,temp_min,temp_max,pressure,humidity,speed,sunrise,sunset);
+                
+                document.querySelector(".city").innerText =name;
+                document.querySelector(".temp").innerText =temp;
+                //document.querySelector("")
+                document.querySelector(".desc").innerText =description;
+                
+            
+        }
+            
+        
+        };
+        
+        
+        
+        
+        
+        
+        
+    </script>-->
+
+    
+    
+    
+    
+    
+        </div>
+        
+        <script>
+            
+            const DATATIMEOUT = 60;
+        
+        function fetchData(){
+            let url = "https://api.openweathermap.org/data/2.5/weather?';
+            url = url + '?apikey=6686b080f70ac73c314d392bc891236a';
+            fetch(url)
+            .then(response=>{
+                return response.json()
+            })
+            .then(data=>{
+                //now we need to check if the data is new ENOUGH
+                let t = data.time;
+                let p = data.people;
+                let output  = document.getElementById('output');
+                let oldtime = localStorage.getItem('westeros-time');
+                if( oldtime ){
+                    //we have data
+                    let intOldTime = parseInt(oldtime);
+                    if( (intOldTime + DATATIMEOUT) < t){
+                        localStorage.setItem('westeros-time', t);
+                        let ps = JSON.stringify(p);
+                        localStorage.setItem('westeros-ppl', ps);
+                        output.textContent = 'List Updated';
+                    }else{
+                        //no update required
+                        output.textContent = 'List IS Up to Date';
+                    }
+                    
+                }else{
+                    //no data
+                    localStorage.setItem('westeros-time', t);
+                    let ps = JSON.stringify(p);
+                    localStorage.setItem('westeros-ppl', ps);
+                    output.textContent = 'List Created';
+                }
+            })
+            .catch(err=>{
+                let output = document.getElementById('output');
+                output.textContent = JSON.stringify(err, null, 2);
+            })
+        }
+        
+        function init(){
+            let h1 = document.querySelector('h1');
+            h1.addEventListener('click', fetchData);
+                //OR
+            let timmy = setInterval(fetchData, 20000); 
+                //once every 20 seconds
+        }
+        
+        document.addEventListener('DOMContentLoaded', init);
+        
+        
+        
+        
+        
+        </script>
+    </body>
+
+
+
+
+
+
+
+</html>
